@@ -11,7 +11,7 @@ import org.example.library.sharedkernel.base.AbstractEntity;
 
 @Entity
 @Getter
-public class Customer extends AbstractEntity<BookId> {
+public class Customer extends AbstractEntity<CustomerId> {
 
     private Name name;
     private Address address;

@@ -1,9 +1,6 @@
 package org.example.library.sales.domain.models;
 
-import jakarta.persistence.AttributeOverride;
-import jakarta.persistence.AttributeOverrides;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.Getter;
 import org.example.library.sales.domain.valueobjects.Name;
 import org.example.library.sharedkernel.base.AbstractEntity;
@@ -21,4 +18,6 @@ public class Book extends AbstractEntity<BookId> {
             @AttributeOverride(name = "name", column = @Column(name = "title"))
     })
     private Money price;
+
+
 }
